@@ -7,63 +7,86 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Survey Form</title>
 </head>
-<body>
+
+<body class="noAutoPos">
     <!-- Title and description here -->
     <h1 id="title">Survey Form Title</h1>
     <p id="description">Description of the form's questions</p>
 
     <form id="survey-form">
-        <label id="name-label" for="name">Name</label>
-        <input id="name" type="text" placeholder="Enter your name here." required>
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name here." required>
+    
+            <!-- Need to react to incorrect email format -->
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your Email here." required>
+        </div>
+    
+        <div>
+            <!-- Need to react to non-numbers and have min and max values accepted -->
+            <label id="number-label" for="number">Number</label>
+            <input id="number" type="number" min="5" max="10" placeholder="Pick number between 5-10">
+        </div>
 
-        <!-- Need to react to incorrect email format -->
-        <label id="email-label" for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your Email here." required>
+        <div>
+            <!-- Dropdown form with "placeholder" blank answer -->
+            <label id="dropdown-label" for="dropdown">Favorite food?</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" disabled selected hidden></option>
+                <option value="pasta">Pasta</option>
+                <option value="burgers">Burgers</option>
+                <option value="pizza">Pizza</option>
+                <option value="salad">Salad</option>
+            </select>
+        </div>
 
-        <!-- Need to react to non-numbers and have min and max values accepted -->
-        <label id="number-label" for="number">Number</label>
-        <input id="number" type="number" min="5" max="10" placeholder="Pick number between 5-10">
-
-        <!-- Dropdown form with "placeholder" blank answer -->
-        <label id="dropdown-label" for="dropdown">Favorite food?</label>
-        <select id="dropdown" name="dropdown">
-            <option value="" disabled selected hidden></option>
-            <option value="pasta">Pasta</option>
-            <option value="burgers">Burgers</option>
-            <option value="pizza">Pizza</option>
-            <option value="salad">Salad</option>
-        </select>
-
-        <!-- Radio buttons sheets are a mess of text aren't they? -->
-        <input type="radio" id="male" name="gender" value="male">
+        <div>
+            <!-- Radio buttons sheets are a mess of text aren't they? -->
+            <input type="radio" id="male" name="gender" value="male">
             <label id="radio-label1" for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
+
+            <input type="radio" id="female" name="gender" value="female">
             <label id="radio-label2" for="female">Female</label>
-        <input type="radio" id="non-binary" name="gender" value="non-binary">
+
+            <input type="radio" id="non-binary" name="gender" value="non-binary">
             <label id="radio-label3" for="non-binary">Non-Binary</label>
-        <input type="radio" id="agender" name="gender" value="agender">
+
+            <input type="radio" id="agender" name="gender" value="agender">
             <label id="radio-label4" for="agender">Agender</label>
-        <input type="radio" id="not-specify" name="gender" value="not-specify">
+
+            <input type="radio" id="not-specify" name="gender" value="not-specify">
             <label id="radio-label5" for="not-specify">Prefer not to say</label>
+        </div>
 
-        <!-- Checkboxes too but indenting helps-->
-        <input type="checkbox" id="game1" name="game1" value="Doom">
+        <div>
+            <!-- Checkboxes too but indenting helps-->
+            <input type="checkbox" id="game1" name="game1" value="Doom">
             <label for="game1">I like Doom</label>
-        <input type="checkbox" id="game2" name="game2" value="Mario">
+
+            <input type="checkbox" id="game2" name="game2" value="Mario">
             <label for="game2">I like Mario</label>
-        <input type="checkbox" id="game3" name="game3" value="Spyro">
+
+            <input type="checkbox" id="game3" name="game3" value="Spyro">
             <label for="game3">I like Spyro</label>
-        <input type="checkbox" id="game4" name="game4" value="Half-Life">
+
+            <input type="checkbox" id="game4" name="game4" value="Half-Life">
             <label for="game4">I like Half-Life</label>
-        <input type="checkbox" id="game5" name="game5" value="Team Fortress 2">
+
+            <input type="checkbox" id="game5" name="game5" value="Team Fortress 2">
             <label for="game5">I like TF2</label>
+        </div>
 
-        <!-- Textarea -->
-        <label for=""></label>
-        <textarea id="textareabox" name="" rows="4" cols="50"></textarea>
+        <div>
+            <!-- Textarea -->
+            <label for=""></label>
+            <textarea id="textareabox" name="" rows="4" cols="50"></textarea>
+        </div>
 
-        <!-- Submit button -->
-        <button id="submit" type="submit">Submit Form</button>
+        <div>
+            <!-- Submit button -->
+            <button id="submit" type="submit">Submit Form</button>
+        </div>
     </form>
 
 </body>
