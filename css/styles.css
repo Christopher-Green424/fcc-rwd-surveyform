@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+.bodyStyle {
+    background-color: rgb(90, 90, 90);
+    color: white;
+    text-align: center;
+}
+
+.marginTop {
+    margin-top: 2vh;
+}
+
 #title {
     font-size: 48px;
 }
@@ -12,11 +22,17 @@
 }
 
 #survey-form {
-    background-color: aqua;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 10px;
+    margin: 5vh 20vw;
+    text-align: center;
+    padding: 3vmin;
 }
 
 #name {
-
+    background-color: black;
+    color: white;
 }
 
 #name-label {
@@ -24,7 +40,8 @@
 }
 
 #email {
-    
+    background-color: black;
+    color: white;
 }
 
 #email-label {
@@ -32,7 +49,8 @@
 }
 
 #number {
-
+    background-color: black;
+    color: white;
 }
 
 #number-label {
@@ -40,7 +58,8 @@
 }
 
 #dropdown {
-
+    background-color: black;
+    color: white;
 }
 
 #dropdown-label {
@@ -48,9 +67,11 @@
 }
 
 #textareabox {
-
+    background-color: black;
+    color: white;
 }
 
 #submit {
-
+    background-color: black;
+    color: white;
 }

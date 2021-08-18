@@ -8,7 +8,7 @@
     <title>Survey Form</title>
 </head>
 
-<body class="noAutoPos">
+<body class="noAutoPos bodyStyle">
     <!-- Title and description here -->
     <h1 id="title">Survey Form Title</h1>
     <p id="description">Description of the form's questions</p>
@@ -23,13 +23,13 @@
             <input id="email" type="email" placeholder="Enter your Email here." required>
         </div>
     
-        <div>
+        <div class="marginTop">
             <!-- Need to react to non-numbers and have min and max values accepted -->
             <label id="number-label" for="number">Number</label>
-            <input id="number" type="number" min="5" max="10" placeholder="Pick number between 5-10">
+            <input id="number" type="number" min="1" max="10" placeholder="Pick number between 1-10">
         </div>
 
-        <div>
+        <div class="marginTop">
             <!-- Dropdown form with "placeholder" blank answer -->
             <label id="dropdown-label" for="dropdown">Favorite food?</label>
             <select id="dropdown" name="dropdown">
@@ -41,7 +41,7 @@
             </select>
         </div>
 
-        <div>
+        <div class="marginTop">
             <!-- Radio buttons sheets are a mess of text aren't they? -->
             <input type="radio" id="male" name="gender" value="male">
             <label id="radio-label1" for="male">Male</label>
@@ -59,7 +59,7 @@
             <label id="radio-label5" for="not-specify">Prefer not to say</label>
         </div>
 
-        <div>
+        <div class="marginTop">
             <!-- Checkboxes too but indenting helps-->
             <input type="checkbox" id="game1" name="game1" value="Doom">
             <label for="game1">I like Doom</label>
@@ -77,13 +77,13 @@
             <label for="game5">I like TF2</label>
         </div>
 
-        <div>
+        <div class="marginTop">
             <!-- Textarea -->
             <label for=""></label>
             <textarea id="textareabox" name="" rows="4" cols="50"></textarea>
         </div>
 
-        <div>
+        <div class="marginTop">
             <!-- Submit button -->
             <button id="submit" type="submit">Submit Form</button>
         </div>
